@@ -1,0 +1,64 @@
+
+/* colors variables */
+:root{
+--secondary-color: rgb(234, 234, 234);
+}
+
+
+/* navbar */
+
+.search-input{
+    background-color: var(--secondary-color);
+    outline: none;
+}
+.search-btn{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Hidden by default */
+    width: 280px;
+    height: 100vh;
+    background: white;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-close {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* header */
+.header-bg{
+    height: 50vh;
+    background-image: url("../imgs/hero-bg.jpg");
+    background-size: cover;
+    
+}
+
+
+
+/* posts */
+.post-text{
+    text-align: justify;
+}
