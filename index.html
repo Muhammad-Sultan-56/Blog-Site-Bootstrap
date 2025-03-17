@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Best Blogs</title>
+    <title>Home - Best Blogs</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <!-- fontawsome -->
@@ -22,8 +22,9 @@
             <h3>Best <span class="text-warning">Blogs</span></h3>
           </a>
         </div>
-        <div class="links d-none d-md-block">
-          <ul class="d-flex gap-5 list-unstyled mb-0">
+        <!-- navbar links -->
+        <div class="links d-none d-lg-block">
+          <ul class="d-flex gap-4 list-unstyled mb-0">
             <li>
               <a href="#" class="text-decoration-none text-dark active">Home</a>
             </li>
@@ -36,21 +37,52 @@
             <li>
               <a href="#" class="text-decoration-none text-dark">Contact</a>
             </li>
+            <li>
+              <div class="dropdown">
+                <span
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages<i class="fa-solid fa-chevron-down ms-1 mt-2"></i>
+                </span>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                  <li><a class="dropdown-item" href="#">Login</a></li>
+                  <li><a class="dropdown-item" href="#">Signup</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">404</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
-        <div class="d-none d-md-block">
-          <div class="d-flex gap-1">
+
+        <!-- search div -->
+        <div class="d-none d-lg-block">
+          <div class="d-flex gap-1 position-relative">
             <input
               type="search"
               placeholder="Search..."
-              class="rounded-5 border-0 shadow-none px-3 py-2 search-input"
+              class="border-0 ps-3 search-input"
             />
-            <button class="btn btn-dark rounded-circle">
+            <button
+              class="btn btn-dark rounded-circle search-btn position-absolute"
+            >
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
+            <div class="">
+              <button
+                class="btn btn-warning login-btn text-white rounded-pill px-3 py-2 btn-sm mt-1 mx-1"
+              >
+                Login <i class="fa-solid fa-right-to-bracket"></i>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="d-block d-md-none" id="menu-toggle">
+
+        <div class="d-block d-lg-none" id="menu-toggle">
           <i class="fa-solid fa-bars-staggered fs-5"></i>
         </div>
       </div>
@@ -63,6 +95,7 @@
         <i class="fa-solid fa-xmark"></i>
       </div>
 
+      <!-- mobile links -->
       <ul class="list-unstyled mb-0">
         <li class="py-2">
           <a href="#" class="text-decoration-none text-dark">Home</a>
@@ -76,16 +109,40 @@
         <li class="py-2">
           <a href="#" class="text-decoration-none text-dark">Contact</a>
         </li>
+        <li>
+          <div class="dropdown">
+            <span type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages<i class="fa-solid fa-chevron-down ms-1 mt-2"></i>
+            </span>
+            <ul class="dropdown-menu border-0">
+              <li><a class="dropdown-item" href="#">Blog Details</a></li>
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">Signup</a></li>
+              <li>
+                <a class="dropdown-item" href="#">404</a>
+              </li>
+            </ul>
+          </div>
+        </li>
       </ul>
 
-      <div class="d-flex gap-1 my-3 pe-3">
+      <!-- mobile search div -->
+      <div class="d-flex gap-1 align-items-center my-3 position-relative">
         <input
           type="search"
           placeholder="Search..."
-          class="rounded-5 border-0 shadow-none px-3 py-2 search-input"
+          class="rounded-5 border-0 shadow-none px-3 py-2 search-input-mobile"
         />
-        <button class="btn btn-dark rounded-circle">
+        <button
+          class="btn btn-dark rounded-circle search-btn-mobile position-absolute"
+        >
           <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button
+          class="btn btn-warning login-btn text-white rounded-pill px-2 py-1 btn-sm mt-1 mx-1"
+        >
+          Login <i class="fa-solid fa-right-to-bracket"></i>
         </button>
       </div>
     </div>
@@ -111,7 +168,7 @@
                   <div class="card border-0 shadow-sm mb-3">
                     <img
                       src="./assets/imgs/posts/post-1.jpg"
-                      class="img-fluid rounded-1"
+                      class="img-fluid post-img"
                       alt="post image"
                     />
 
@@ -154,7 +211,7 @@
                   <div class="card border-0 shadow-sm mb-3">
                     <img
                       src="./assets/imgs/posts/post-2.jpg"
-                      class="img-fluid rounded-1"
+                      class="img-fluid post-img"
                       alt="post image"
                     />
 
@@ -197,7 +254,7 @@
                   <div class="card border-0 shadow-sm mb-3">
                     <img
                       src="./assets/imgs/posts/post-3.jpg"
-                      class="img-fluid rounded-1"
+                      class="img-fluid post-img"
                       alt="post image"
                     />
 
@@ -240,7 +297,7 @@
                   <div class="card border-0 shadow-sm mb-3">
                     <img
                       src="./assets/imgs/posts/post-4.jpg"
-                      class="img-fluid rounded-1"
+                      class="img-fluid post-img"
                       alt="post image"
                     />
 
@@ -283,7 +340,7 @@
                   <div class="card border-0 shadow-sm mb-3">
                     <img
                       src="./assets/imgs/posts/post-5.jpg"
-                      class="img-fluid rounded-1"
+                      class="img-fluid post-img"
                       alt="post image"
                     />
 
@@ -326,7 +383,7 @@
                   <div class="card border-0 shadow-sm mb-3">
                     <img
                       src="./assets/imgs/posts/post-6.jpg"
-                      class="img-fluid rounded-1"
+                      class="img-fluid post-img"
                       alt="post image"
                     />
 
@@ -369,7 +426,7 @@
                   <div class="card border-0 shadow-sm mb-3">
                     <img
                       src="./assets/imgs/posts/post-7.jpg"
-                      class="img-fluid rounded-1"
+                      class="img-fluid post-img"
                       alt="post image"
                     />
 
@@ -412,93 +469,7 @@
                   <div class="card border-0 shadow-sm mb-3">
                     <img
                       src="./assets/imgs/posts/post-8.jpg"
-                      class="img-fluid rounded-1"
-                      alt="post image"
-                    />
-
-                    <div class="p-3">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div>
-                          <img
-                            src="./assets/imgs/authors/profile_pic.png"
-                            height="40px"
-                            width="40px"
-                            class="rounded-circle"
-                            alt=""
-                          />
-                          <span class="text-muted">Ali Hamza</span>
-                        </div>
-
-                        <div>
-                          <i class="fa-solid fa-calendar text-warning"></i>
-                          <span class="text-muted">March 19, 2025</span>
-                        </div>
-                      </div>
-
-                      <h5 class="my-3">
-                        This is the heading of the post for the card UI
-                      </h5>
-                      <p class="post-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Molestias veniam blanditiis harum facilis voluptates
-                        quibusdam tenetur voluptate beatae.
-                        <a href="#" class="text-decoration-none text-warning"
-                          >Continue Reading...
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="card border-0 shadow-sm mb-3">
-                    <img
-                      src="./assets/imgs/posts/post-9.jpg"
-                      class="img-fluid rounded-1"
-                      alt="post image"
-                    />
-
-                    <div class="p-3">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div>
-                          <img
-                            src="./assets/imgs/authors/profile_pic.png"
-                            height="40px"
-                            width="40px"
-                            class="rounded-circle"
-                            alt=""
-                          />
-                          <span class="text-muted">Ali Hamza</span>
-                        </div>
-
-                        <div>
-                          <i class="fa-solid fa-calendar text-warning"></i>
-                          <span class="text-muted">March 19, 2025</span>
-                        </div>
-                      </div>
-
-                      <h5 class="my-3">
-                        This is the heading of the post for the card UI
-                      </h5>
-                      <p class="post-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Molestias veniam blanditiis harum facilis voluptates
-                        quibusdam tenetur voluptate beatae.
-                        <a href="#" class="text-decoration-none text-warning"
-                          >Continue Reading...
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="card border-0 shadow-sm mb-3">
-                    <img
-                      src="./assets/imgs/posts/post-10.jpg"
-                      class="img-fluid rounded-1"
+                      class="img-fluid post-img"
                       alt="post image"
                     />
 
@@ -542,13 +513,301 @@
           </div>
 
           <div class="col-md-4">
-            <!-- side section -->
-            <section></section>
+            <!-- categories -->
+            <section>
+              <div class="card border-0 shadow-sm p-3 mb-4">
+                <h4>Categories</h4>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between">
+                    Technology <span>11</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    Health <span>09</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    Nature <span>18</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    Suports <span>21</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    Food <span>15</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    Business <span>17</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    Freelancing <span>20</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    Digital Products <span>07</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Popular Posts -->
+            <section>
+              <div class="card border-0 shadow-sm p-3">
+                <h4 class="border-1 border-bottom pb-3">Popular Posts</h4>
+
+                <div class="card mb-3 border-0">
+                  <div class="row align-items-center g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="./assets/imgs/posts/post-1.jpg"
+                        class="img-fluid"
+                        alt="post image"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          This is the Title of the Post for testing
+                        </h6>
+
+                        <div>
+                          <i class="fa-solid fa-calendar text-warning"></i>
+                          <span class="text-muted">March 19, 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 border-0">
+                  <div class="row align-items-center g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="./assets/imgs/posts/post-2.jpg"
+                        class="img-fluid"
+                        alt="post image"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          This is the Title of the Post for testing
+                        </h6>
+
+                        <div>
+                          <i class="fa-solid fa-calendar text-warning"></i>
+                          <span class="text-muted">March 19, 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 border-0">
+                  <div class="row align-items-center g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="./assets/imgs/posts/post-3.jpg"
+                        class="img-fluid"
+                        alt="post image"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          This is the Title of the Post for testing
+                        </h6>
+
+                        <div>
+                          <i class="fa-solid fa-calendar text-warning"></i>
+                          <span class="text-muted">March 19, 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 border-0">
+                  <div class="row align-items-center g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="./assets/imgs/posts/post-4.jpg"
+                        class="img-fluid"
+                        alt="post image"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          This is the Title of the Post for testing
+                        </h6>
+
+                        <div>
+                          <i class="fa-solid fa-calendar text-warning"></i>
+                          <span class="text-muted">March 19, 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 border-0">
+                  <div class="row align-items-center g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="./assets/imgs/posts/post-5.jpg"
+                        class="img-fluid"
+                        alt="post image"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          This is the Title of the Post for testing
+                        </h6>
+
+                        <div>
+                          <i class="fa-solid fa-calendar text-warning"></i>
+                          <span class="text-muted">March 19, 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3 border-0">
+                  <div class="row align-items-center g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="./assets/imgs/posts/post-6.jpg"
+                        class="img-fluid"
+                        alt="post image"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          This is the Title of the Post for testing
+                        </h6>
+
+                        <div>
+                          <i class="fa-solid fa-calendar text-warning"></i>
+                          <span class="text-muted">March 19, 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3 border-0">
+                  <div class="row align-items-center g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="./assets/imgs/posts/post-7.jpg"
+                        class="img-fluid"
+                        alt="post image"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h6 class="card-title">
+                          This is the Title of the Post for testing
+                        </h6>
+
+                        <div>
+                          <i class="fa-solid fa-calendar text-warning"></i>
+                          <span class="text-muted">March 19, 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- tags -->
+            <section>
+              <div class="my-3 p-3">
+                <h4 class="border-1 border-bottom pb-3">Tags</h4>
+                <div class="d-flex flex-wrap gap-2 p-2">
+                  <a href="#" class="btn btn-light btn-sm">Freelancing</a>
+                  <a href="#" class="btn btn-light btn-sm">Adventure</a>
+                  <a href="#" class="btn btn-light btn-sm">Travel</a>
+                  <a href="#" class="btn btn-light btn-sm">Food</a>
+                  <a href="#" class="btn btn-light btn-sm">Business</a>
+                  <a href="#" class="btn btn-light btn-sm">Ai</a>
+                  <a href="#" class="btn btn-light btn-sm">Lifestyle</a>
+                  <a href="#" class="btn btn-light btn-sm">Fashions</a>
+                  <a href="#" class="btn btn-light btn-sm">Web Develop,emt</a>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
     </main>
+
     <!-- main section end -->
+
+    <!-- footer start -->
+    <footer class="bg-dark p-3">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="px-3">
+              <h2 class="text-white">
+                Best <span class="text-warning">Blog</span>
+              </h2>
+              <p class="text-white" align="justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur incidunt nisi odio nihil ut debitis, ipsa odit hic
+                ipsum soluta qui at error, assumenda esse! Laboriosam ea numquam
+                perspiciatis debitis!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="px-4 text-white">
+              <h4 class="fw-light mb-3">Quick Links</h4>
+              <ul
+                class="list-unstyled bg-none border-0 ps-2 d-flex flex-column gap-2"
+              >
+                <li class="">All Posts</li>
+                <li class="">About</li>
+                <li class="">Contact</li>
+                <li class="">FAQ's</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="px-4 text-white">
+              <h4 class="fw-light mb-3">GET IN TOUCH</h4>
+              <div class="d-flex gap-3">
+                <i class="fa-brands fa-square-facebook footer-icon"></i>
+                <i class="fa-brands fa-square-instagram footer-icon"></i>
+                <i class="fa-brands fa-square-x-twitter footer-icon"></i>
+                <i class="fa-brands fa-linkedin footer-icon"></i>
+              </div>
+            </div>
+
+            <div class="px-4 text-white mt-4">
+              <h5 class="fw-normal text-white mb-2">
+                Subscribe Ouer Newsletter
+              </h5>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control shadow-none"
+                  placeholder="Enter Email"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-warning"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- bootstrap -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- fontawsome -->

@@ -10,21 +10,23 @@
 .search-input{
     background-color: var(--secondary-color);
     outline: none;
+    width: 250px;
+    border-radius: 70px;
+    padding: 5px;
 }
 .search-btn{
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    margin: 0;
-    padding: 0;
-    border: none;
+    right: 100px;
+    top: 2px;
 }
-
+.login-btn:hover{
+background-color: black;
+border: 1px solid transparent;
+}
 .mobile-menu {
     position: fixed;
     top: 0;
-    right: -300px; /* Hidden by default */
-    width: 280px;
+    right: -320px; /* Hidden by default */
+    width: 320px;
     height: 100vh;
     background: white;
     box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
@@ -48,9 +50,22 @@
     font-size: 24px;
 }
 
+.search-input-mobile{
+    background-color: var(--secondary-color);
+    outline: none;
+    width: 200px;
+    border-radius: 70px;
+    padding: 5px;
+}
+
+.search-btn-mobile{
+    right: 94px;
+    top: 2px;
+}
+
 /* header */
 .header-bg{
-    height: 50vh;
+    height: 60vh;
     background-image: url("../imgs/hero-bg.jpg");
     background-size: cover;
     
@@ -58,7 +73,25 @@
 
 
 
+/* footer */
+.footer-icon{
+    border: 1px solid white;
+    padding: 8px 10px;
+    font-size: 23px;
+border-radius: 50%;
+}
+.footer-icon:hover{
+    color: #FFC107;
+    border: 1px solid #FFC107;
+
+}
+
+
 /* posts */
+.post-img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
 .post-text{
     text-align: justify;
 }
