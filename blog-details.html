@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Best Blogs</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="./assets/css/fontawsome.min.css" />
+    <!-- custom style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!------- Navbar Start -------->
+    <nav>
+      <div
+        class="container d-flex align-items-center justify-content-between px-2 py-3"
+      >
+        <div class="logo">
+          <a href="#" class="text-decoration-none text-dark">
+            <h3>Best <span class="text-warning">Blogs</span></h3>
+          </a>
+        </div>
+        <!-- navbar links -->
+        <div class="links d-none d-lg-block">
+          <ul class="d-flex gap-4 list-unstyled mb-0">
+            <li>
+              <a href="index.html" class="text-decoration-none text-dark active"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="text-decoration-none text-dark"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark">Blogs</a>
+            </li>
+            <li>
+              <a href="contact.html" class="text-decoration-none text-dark"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <div class="dropdown">
+                <span
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages<i class="fa-solid fa-chevron-down ms-1 mt-2"></i>
+                </span>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li>
+                    <a class="dropdown-item" href="signup.html">Signup</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">404</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- search div -->
+        <div class="d-none d-lg-block">
+          <div class="d-flex gap-1 position-relative">
+            <input
+              type="search"
+              placeholder="Search..."
+              class="border-0 ps-3 search-input"
+            />
+            <button
+              class="btn btn-dark rounded-circle search-btn position-absolute"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="">
+              <a
+                href="login.html"
+                class="btn btn-outline-warning login-btn rounded-pill fw-bold px-3 py-2 btn-sm mt-1 mx-1"
+              >
+                Login <i class="fa-solid fa-right-to-bracket"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-block d-lg-none" id="menu-toggle">
+          <i class="fa-solid fa-bars-staggered fs-5"></i>
+        </div>
+      </div>
+    </nav>
+    <!------ Navbar End -------->
+
+    <!------ Mobile Menu ------>
+    <div class="mobile-menu pe-2" id="mobileMenu">
+      <div class="menu-header menu-close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <!-- mobile links -->
+      <ul class="list-unstyled mb-0">
+        <li class="py-2">
+          <a href="index.html" class="text-decoration-none text-dark">Home</a>
+        </li>
+        <li class="py-2">
+          <a href="about.html" class="text-decoration-none text-dark">About</a>
+        </li>
+        <li class="py-2">
+          <a href="#" class="text-decoration-none text-dark">Blogs</a>
+        </li>
+        <li class="py-2">
+          <a href="contact.html" class="text-decoration-none text-dark"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <div class="dropdown">
+            <span type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages<i class="fa-solid fa-chevron-down ms-1 mt-2"></i>
+            </span>
+            <ul class="dropdown-menu border-0">
+              <li>
+                <a class="dropdown-item" href="blog-details.html"
+                  >Blog Details</a
+                >
+              </li>
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="signup.html">Signup</a></li>
+              <li>
+                <a class="dropdown-item" href="404.html">404</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <!-- mobile search div -->
+      <div class="d-flex gap-1 align-items-center my-3 position-relative">
+        <input
+          type="search"
+          placeholder="Search..."
+          class="rounded-5 border-0 shadow-none px-3 py-2 search-input-mobile"
+        />
+        <button
+          class="btn btn-dark rounded-circle search-btn-mobile position-absolute"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <a
+          href="login.html"
+          class="btn btn-outline-warning login-btn fw-bold rounded-pill px-2 py-2 btn-sm mt-1 ms-1"
+        >
+          Login <i class="fa-solid fa-right-to-bracket"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Mobile Menu end  -->
+
+    <!-- main section -->
+    <main>
+      <div class="container my-4 p-3">
+        <div class="text-center">
+          <img
+            src="./assets/imgs/posts/post-6.jpg"
+            class="img-fluid object-fit-cover rounded-3"
+            alt=""
+          />
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center p-3">
+          <div>
+            <img
+              src="./assets/imgs/authors/profile_pic.png"
+              height="50px"
+              width="50px"
+              class="rounded-circle"
+              alt=""
+            />
+            <span class="text-muted ms-2">Ali Hamza</span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-calendar text-warning"></i>
+            <span class="text-muted">March 19, 2025</span>
+          </div>
+        </div>
+        <div class="p-3">
+          <h2 class="">
+            This is the Title of the Post for Testing the UI of the Blog Post
+            Details Page that how it look on page.
+          </h2>
+
+          <p class="" align="justify">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+            magnam necessitatibus iste corporis sunt, rerum cumque quae soluta
+            fugit earum vitae, ducimus velit possimus sequi consequatur tempora
+            beatae dolorem molestiae repellat? Sed ut illo aperiam tempora
+            itaque officia reiciendis praesentium neque non tempore, voluptatum
+            quisquam distinctio quibusdam consequuntur inventore eos laboriosam
+            aut sequi repellendus dolor molestiae vel. Consequuntur, repellat
+            nihil dolor, ducimus ut necessitatibus ipsam cumque magni inventore
+            architecto nam illo, fugit delectus eos temporibus eius quae! Ut
+            nobis consequuntur esse, omnis, veritatis eius illo id asperiores
+            <br />
+            <br />
+            quasi accusamus eligendi sequi ducimus et quia necessitatibus itaque
+            dicta voluptatem ad repudiandae. Eum, officia facere? Nobis
+            perferendis temporibus molestias consectetur non suscipit enim
+            cupiditate quae nostrum ex laudantium sed asperiores excepturi dicta
+            nesciunt, et quibusdam corporis impedit amet obcaecati dolor? Quasi
+            eius cumque est repellat adipisci corporis pariatur expedita rerum
+            saepe. Libero nemo sint, quia voluptatibus voluptatum fuga impedit
+            quaerat nihil iure, provident reprehenderit adipisci similique.
+            Explicabo, molestias amet? Aliquid reiciendis quos, doloribus modi
+            suscipit unde neque architecto nihil. Deserunt consequatur est
+            explicabo voluptatem. Eaque ab eveniet ea nemo sunt rerum impedit
+            nostrum labore eius vitae a deserunt enim libero possimus odio earum
+            minima magnam ut cumque iusto facilis expedita, ratione magni
+            excepturi. Eaque, ea ullam architecto blanditiis voluptas
+            <br />
+            <br />
+            repudiandae eius provident iste impedit aliquid deleniti id rerum
+            cupiditate quisquam nisi obcaecati facere quidem amet? Nesciunt
+            minima ipsa expedita consectetur quasi totam tempora amet explicabo
+            aut quod eaque ullam dolores fuga minus est vel eveniet facilis
+            sequi odio illum blanditiis quos laudantium, praesentium atque? Sit
+            impedit ut libero nemo veritatis. Quos, soluta ratione velit eaque
+            enim tenetur amet inventore aperiam temporibus quia non? Voluptatum
+            odit veritatis cupiditate praesentium commodi itaque voluptate,
+            fuga, laboriosam sed soluta, temporibus hic animi a! Architecto,
+            itaque veritatis. Earum voluptatibus saepe excepturi ullam tempora
+            odit et molestiae dolor deserunt magnam vel maxime, quas vero eum
+            numquam! Distinctio ratione, velit ex veniam ab illo omnis sit iure
+            non quisquam perferendis consequuntur nostrum excepturi.
+            Reprehenderit, voluptates eius magnam nemo nisi incidunt amet quam
+            impedit, necessitatibus molestiae quas, earum fuga odit maxime!
+            Provident asperiores laudantium, sit, sapiente nostrum dolore vero
+            quo dignissimos doloremque impedit consequatur? Officia consectetur
+            totam odit tempore perferendis voluptates corrupti quibusdam sit
+            fugiat, voluptas suscipit nemo fugit ut necessitatibus numquam eos?
+            Atque deleniti similique repellendus iste assumenda qui nam
+            <br />
+            <br />
+            consequatur distinctio, ex, rem accusantium. Doloribus, quod esse?
+            Nesciunt tempore nihil sit mollitia dolor sed quas autem ea
+            dignissimos ab pariatur natus, ipsa, ducimus quae odio harum. Enim
+            facere dicta dolorem! Commodi, maiores reprehenderit laudantium
+            vitae cupiditate ut maxime molestiae sint. Exercitationem unde fuga
+            voluptas maxime? Quasi totam iste quia expedita ipsum facilis est
+            sit doloribus, recusandae quaerat repellendus. Sint provident
+            facilis voluptate odit quidem fuga aliquam saepe optio pariatur,
+            minus soluta ad quasi, in iure obcaecati porro? Quam eum nisi id
+            rerum quos deleniti reprehenderit excepturi tempora modi. Molestias
+            nostrum deleniti numquam corrupti repellendus quasi dicta
+            consectetur modi architecto eum sit quo, praesentium culpa
+            aspernatur alias corporis hic provident, reprehenderit quaerat unde
+            eos quisquam, nesciunt assumenda dolorum. Maiores.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- main section end -->
+
+    <!-- footer start -->
+    <footer class="bg-dark p-3">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="px-3">
+              <h2 class="text-white">
+                Best <span class="text-warning">Blog</span>
+              </h2>
+              <p class="text-white" align="justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur incidunt nisi odio nihil ut debitis, ipsa odit hic
+                ipsum soluta qui at error, assumenda esse! Laboriosam ea numquam
+                perspiciatis debitis!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="px-4 text-white">
+              <h4 class="fw-light mb-3">Quick Links</h4>
+              <ul
+                class="list-unstyled bg-none border-0 ps-2 d-flex flex-column gap-2"
+              >
+                <li class="">All Posts</li>
+                <li class="">About</li>
+                <li class="">Contact</li>
+                <li class="">FAQ's</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="px-4 text-white">
+              <h4 class="fw-light mb-3">GET IN TOUCH</h4>
+              <div class="d-flex gap-3">
+                <i class="fa-brands fa-square-facebook footer-icon"></i>
+                <i class="fa-brands fa-square-instagram footer-icon"></i>
+                <i class="fa-brands fa-square-x-twitter footer-icon"></i>
+                <i class="fa-brands fa-linkedin footer-icon"></i>
+              </div>
+            </div>
+
+            <div class="px-4 text-white mt-4">
+              <h5 class="fw-normal text-white mb-2">
+                Subscribe Ouer Newsletter
+              </h5>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control shadow-none"
+                  placeholder="Enter Email"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-warning"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawsome -->
+    <script src="./assets/js/fontawsome.min.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

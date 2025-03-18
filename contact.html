@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Best Blogs</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="./assets/css/fontawsome.min.css" />
+    <!-- custom style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!------- Navbar Start -------->
+    <nav>
+      <div
+        class="container d-flex align-items-center justify-content-between px-2 py-3"
+      >
+        <div class="logo">
+          <a href="#" class="text-decoration-none text-dark">
+            <h3>Best <span class="text-warning">Blogs</span></h3>
+          </a>
+        </div>
+        <!-- navbar links -->
+        <div class="links d-none d-lg-block">
+          <ul class="d-flex gap-4 list-unstyled mb-0">
+            <li>
+              <a href="index.html" class="text-decoration-none text-dark active"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="text-decoration-none text-dark"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark">Blogs</a>
+            </li>
+            <li>
+              <a href="contact.html" class="text-decoration-none text-dark"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <div class="dropdown">
+                <span
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages<i class="fa-solid fa-chevron-down ms-1 mt-2"></i>
+                </span>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li>
+                    <a class="dropdown-item" href="signup.html">Signup</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">404</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- search div -->
+        <div class="d-none d-lg-block">
+          <div class="d-flex gap-1 position-relative">
+            <input
+              type="search"
+              placeholder="Search..."
+              class="border-0 ps-3 search-input"
+            />
+            <button
+              class="btn btn-dark rounded-circle search-btn position-absolute"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="">
+              <a
+                href="login.html"
+                class="btn btn-outline-warning login-btn rounded-pill fw-bold px-3 py-2 btn-sm mt-1 mx-1"
+              >
+                Login <i class="fa-solid fa-right-to-bracket"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-block d-lg-none" id="menu-toggle">
+          <i class="fa-solid fa-bars-staggered fs-5"></i>
+        </div>
+      </div>
+    </nav>
+    <!------ Navbar End -------->
+
+    <!------ Mobile Menu ------>
+    <div class="mobile-menu pe-2" id="mobileMenu">
+      <div class="menu-header menu-close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <!-- mobile links -->
+      <ul class="list-unstyled mb-0">
+        <li class="py-2">
+          <a href="index.html" class="text-decoration-none text-dark">Home</a>
+        </li>
+        <li class="py-2">
+          <a href="about.html" class="text-decoration-none text-dark">About</a>
+        </li>
+        <li class="py-2">
+          <a href="#" class="text-decoration-none text-dark">Blogs</a>
+        </li>
+        <li class="py-2">
+          <a href="contact.html" class="text-decoration-none text-dark"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <div class="dropdown">
+            <span type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages<i class="fa-solid fa-chevron-down ms-1 mt-2"></i>
+            </span>
+            <ul class="dropdown-menu border-0">
+              <li>
+                <a class="dropdown-item" href="blog-details.html"
+                  >Blog Details</a
+                >
+              </li>
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="signup.html">Signup</a></li>
+              <li>
+                <a class="dropdown-item" href="404.html">404</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <!-- mobile search div -->
+      <div class="d-flex gap-1 align-items-center my-3 position-relative">
+        <input
+          type="search"
+          placeholder="Search..."
+          class="rounded-5 border-0 shadow-none px-3 py-2 search-input-mobile"
+        />
+        <button
+          class="btn btn-dark rounded-circle search-btn-mobile position-absolute"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <a
+          href="login.html"
+          class="btn btn-outline-warning login-btn fw-bold rounded-pill px-2 py-2 btn-sm mt-1 ms-1"
+        >
+          Login <i class="fa-solid fa-right-to-bracket"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Mobile Menu end  -->
+
+    <!-- header start -->
+    <header class="container px-3 px-md-2">
+      <div
+        class="about-header-bg rounded-2 d-flex justify-content-center align-items-center"
+      >
+        <div>
+          <h1 class="text-white text-center">
+            Contact <span class="text-warning">US</span>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main section -->
+    <main>
+      <div class="container my-4 p-3"></div>
+    </main>
+
+    <!-- main section end -->
+
+    <!-- footer start -->
+    <footer class="bg-dark p-3">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="px-3">
+              <h2 class="text-white">
+                Best <span class="text-warning">Blog</span>
+              </h2>
+              <p class="text-white" align="justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur incidunt nisi odio nihil ut debitis, ipsa odit hic
+                ipsum soluta qui at error, assumenda esse! Laboriosam ea numquam
+                perspiciatis debitis!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="px-4 text-white">
+              <h4 class="fw-light mb-3">Quick Links</h4>
+              <ul
+                class="list-unstyled bg-none border-0 ps-2 d-flex flex-column gap-2"
+              >
+                <li class="">All Posts</li>
+                <li class="">About</li>
+                <li class="">Contact</li>
+                <li class="">FAQ's</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="px-4 text-white">
+              <h4 class="fw-light mb-3">GET IN TOUCH</h4>
+              <div class="d-flex gap-3">
+                <i class="fa-brands fa-square-facebook footer-icon"></i>
+                <i class="fa-brands fa-square-instagram footer-icon"></i>
+                <i class="fa-brands fa-square-x-twitter footer-icon"></i>
+                <i class="fa-brands fa-linkedin footer-icon"></i>
+              </div>
+            </div>
+
+            <div class="px-4 text-white mt-4">
+              <h5 class="fw-normal text-white mb-2">
+                Subscribe Ouer Newsletter
+              </h5>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control shadow-none"
+                  placeholder="Enter Email"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-warning"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawsome -->
+    <script src="./assets/js/fontawsome.min.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -15,7 +15,7 @@
     <!------- Navbar Start -------->
     <nav>
       <div
-        class="container d-flex align-items-center justify-content-between px-4 py-3"
+        class="container d-flex align-items-center justify-content-between px-2 py-3"
       >
         <div class="logo">
           <a href="#" class="text-decoration-none text-dark">
@@ -26,16 +26,22 @@
         <div class="links d-none d-lg-block">
           <ul class="d-flex gap-4 list-unstyled mb-0">
             <li>
-              <a href="#" class="text-decoration-none text-dark active">Home</a>
+              <a href="index.html" class="text-decoration-none text-dark active"
+                >Home</a
+              >
             </li>
             <li>
-              <a href="#" class="text-decoration-none text-dark">About</a>
+              <a href="about.html" class="text-decoration-none text-dark"
+                >About</a
+              >
             </li>
             <li>
               <a href="#" class="text-decoration-none text-dark">Blogs</a>
             </li>
             <li>
-              <a href="#" class="text-decoration-none text-dark">Contact</a>
+              <a href="contact.html" class="text-decoration-none text-dark"
+                >Contact</a
+              >
             </li>
             <li>
               <div class="dropdown">
@@ -47,11 +53,17 @@
                   Pages<i class="fa-solid fa-chevron-down ms-1 mt-2"></i>
                 </span>
                 <ul class="dropdown-menu border-0">
-                  <li><a class="dropdown-item" href="#">Blog Details</a></li>
-                  <li><a class="dropdown-item" href="#">Login</a></li>
-                  <li><a class="dropdown-item" href="#">Signup</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">404</a>
+                    <a class="dropdown-item" href="blog-details.html"
+                      >Blog Details</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li>
+                    <a class="dropdown-item" href="signup.html">Signup</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="404.html">404</a>
                   </li>
                 </ul>
               </div>
@@ -73,11 +85,12 @@
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
             <div class="">
-              <button
-                class="btn btn-warning login-btn text-white rounded-pill px-3 py-2 btn-sm mt-1 mx-1"
+              <a
+                href="login.html"
+                class="btn btn-outline-warning login-btn rounded-pill fw-bold px-3 py-2 btn-sm mt-1 mx-1"
               >
                 Login <i class="fa-solid fa-right-to-bracket"></i>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -98,16 +111,18 @@
       <!-- mobile links -->
       <ul class="list-unstyled mb-0">
         <li class="py-2">
-          <a href="#" class="text-decoration-none text-dark">Home</a>
+          <a href="index.html" class="text-decoration-none text-dark">Home</a>
         </li>
         <li class="py-2">
-          <a href="#" class="text-decoration-none text-dark">About</a>
+          <a href="about.html" class="text-decoration-none text-dark">About</a>
         </li>
         <li class="py-2">
           <a href="#" class="text-decoration-none text-dark">Blogs</a>
         </li>
         <li class="py-2">
-          <a href="#" class="text-decoration-none text-dark">Contact</a>
+          <a href="contact.html" class="text-decoration-none text-dark"
+            >Contact</a
+          >
         </li>
         <li>
           <div class="dropdown">
@@ -115,11 +130,15 @@
               Pages<i class="fa-solid fa-chevron-down ms-1 mt-2"></i>
             </span>
             <ul class="dropdown-menu border-0">
-              <li><a class="dropdown-item" href="#">Blog Details</a></li>
-              <li><a class="dropdown-item" href="#">Login</a></li>
-              <li><a class="dropdown-item" href="#">Signup</a></li>
               <li>
-                <a class="dropdown-item" href="#">404</a>
+                <a class="dropdown-item" href="blog-details.html"
+                  >Blog Details</a
+                >
+              </li>
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="signup.html">Signup</a></li>
+              <li>
+                <a class="dropdown-item" href="404.html">404</a>
               </li>
             </ul>
           </div>
@@ -139,19 +158,20 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
 
-        <button
-          class="btn btn-warning login-btn text-white rounded-pill px-2 py-1 btn-sm mt-1 mx-1"
+        <a
+          href="login.html"
+          class="btn btn-outline-warning login-btn fw-bold rounded-pill px-2 py-2 btn-sm mt-1 ms-1"
         >
           Login <i class="fa-solid fa-right-to-bracket"></i>
-        </button>
+        </a>
       </div>
     </div>
 
     <!-- Mobile Menu end  -->
 
     <!-- header start -->
-    <header class="container px-4 px-md-0">
-      <div class="header-bg rounded-4"></div>
+    <header class="container px-3 px-md-2">
+      <div class="header-bg rounded-2"></div>
     </header>
     <!-- header end -->
 
