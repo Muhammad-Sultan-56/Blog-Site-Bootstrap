@@ -1,8 +1,24 @@
 
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 /* colors variables */
 :root{
 --secondary-color: rgb(234, 234, 234);
+--heading-font : "Nunito", sans-serif;
 }
+
+*{
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 16.5px;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font) !important;
+    font-weight: 650;
+}
+
+
 
 
 /* navbar */
@@ -67,7 +83,9 @@
     background-size: cover;
     
 }
-
+.header-para{
+    font-size: 18px;
+}
 
 /* footer */
 .footer-icon{
@@ -89,6 +107,23 @@ border-radius: 50%;
 }
 .post-text{
     text-align: justify;
+}
+.post-pagination span{
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+    display: flex; justify-content: center;
+    align-items: center;
+}
+
+.post-pagination span.active , .post-pagination span:hover{
+    background-color: black;
+    color: white;
+}
+.dot{
+    font-size: 5px !important;
 }
 
 
