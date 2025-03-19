@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Best Blogs</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./assets/imgs/favicon.png" />
     <!-- bootstrap -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <!-- fontawsome -->
     <link rel="stylesheet" href="./assets/css/fontawsome.min.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="./assets/css/aos.css" />
     <!-- custom style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -176,7 +180,7 @@
       <div
         class="header-bg rounded-2 d-flex justify-content-center align-items-center"
       >
-        <div class="text-center">
+        <div class="text-center" data-aos="fade-down" data-aos-duration="700">
           <h1 class="mb-3">
             Welcome to Best <span class="text-warning">Blogs</span>
           </h1>
@@ -855,7 +859,14 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- fontawsome -->
     <script src="./assets/js/fontawsome.min.js"></script>
+    <!-- aos -->
+    <script src="./assets/js/aos.js"></script>
     <!-- custom js -->
     <script src="./assets/js/main.js"></script>
+
+    <script>
+      // aos js
+      AOS.init();
+    </script>
   </body>
 </html>

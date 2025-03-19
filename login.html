@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Best Blogs</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./assets/imgs/favicon.png" />
     <!-- bootstrap -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <!-- fontawsome -->
     <link rel="stylesheet" href="./assets/css/fontawsome.min.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+
     <!-- custom style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -16,10 +21,14 @@
       <div class="container">
         <div class="row justify-content-center align-content-center">
           <div class="col-md-4 mt-5">
-            <div class="card border-0 rounded-4 shadow p-4 mt-5">
-              <h2 class="text-center mb-4">
-                Best <span class="text-warning">Blogs</span>
-              </h2>
+            <div
+              class="card border-0 rounded-4 shadow p-4 mt-5"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              <div class="text-center mb-3">
+                <img src="./assets/imgs/Logo.png" height="75px" alt="Logo" />
+              </div>
 
               <form class="px-3">
                 <div class="mb-4">
@@ -63,7 +72,14 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- fontawsome -->
     <script src="./assets/js/fontawsome.min.js"></script>
+    <!-- aos -->
+    <script src="./assets/js/aos.js"></script>
     <!-- custom js -->
     <script src="./assets/js/main.js"></script>
+
+    <script>
+      // aos js
+      AOS.init();
+    </script>
   </body>
 </html>
