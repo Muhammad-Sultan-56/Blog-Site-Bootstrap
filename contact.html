@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <!-- fontawsome -->
     <link rel="stylesheet" href="./assets/css/fontawsome.min.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="./assets/css/aos.css" />
     <!-- custom style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -20,8 +22,8 @@
         class="container d-flex align-items-center justify-content-between px-2 py-3"
       >
         <div class="logo">
-          <a href="#" class="text-decoration-none text-dark">
-            <h3>Best <span class="text-warning">Blogs</span></h3>
+          <a href="index.html">
+            <img src="./assets/imgs/Logo.png" height="75px" alt="Logo" />
           </a>
         </div>
         <!-- navbar links -->
@@ -38,7 +40,9 @@
               >
             </li>
             <li>
-              <a href="#" class="text-decoration-none text-dark">Blogs</a>
+              <a href="blogs.html" class="text-decoration-none text-dark"
+                >Blogs</a
+              >
             </li>
             <li>
               <a href="contact.html" class="text-decoration-none text-dark"
@@ -55,13 +59,17 @@
                   Pages<i class="fa-solid fa-chevron-down ms-1 mt-2"></i>
                 </span>
                 <ul class="dropdown-menu border-0">
-                  <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                  <li>
+                    <a class="dropdown-item" href="blog-details.html"
+                      >Blog Details</a
+                    >
+                  </li>
                   <li><a class="dropdown-item" href="login.html">Login</a></li>
                   <li>
                     <a class="dropdown-item" href="signup.html">Signup</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">404</a>
+                    <a class="dropdown-item" href="404.html">404</a>
                   </li>
                 </ul>
               </div>
@@ -115,7 +123,7 @@
           <a href="about.html" class="text-decoration-none text-dark">About</a>
         </li>
         <li class="py-2">
-          <a href="#" class="text-decoration-none text-dark">Blogs</a>
+          <a href="blogs.html" class="text-decoration-none text-dark">Blogs</a>
         </li>
         <li class="py-2">
           <a href="contact.html" class="text-decoration-none text-dark"
@@ -125,7 +133,7 @@
         <li>
           <div class="dropdown">
             <span type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Pages<i class="fa-solid fa-chevron-down ms-1 mt-2"></i>
+              Pages<i class="fa-solid fa-chevron-down ms-1"></i>
             </span>
             <ul class="dropdown-menu border-0">
               <li>
@@ -183,7 +191,122 @@
 
     <!-- main section -->
     <main>
-      <div class="container my-4 p-3"></div>
+      <div class="container my-4 p-3">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card p-3 border-0">
+              <div class="my-3">
+                <h2>Contact Information</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda quia fugit soluta aperiam et aspernatur labore nulla
+                  sit quae.
+                </p>
+                <hr />
+              </div>
+
+              <!-- contact info div -->
+              <div>
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="p-3 bg-dark text-warning rounded-3">
+                      <i class="fa-solid fa-phone fs-4"></i>
+                    </div>
+                    <div>
+                      <h5>Phone</h5>
+                      <p>+9200-1234567</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="p-3 bg-dark text-warning rounded-3">
+                      <i class="fa-regular fa-envelope fs-4"></i>
+                    </div>
+                    <div>
+                      <h5>Email</h5>
+                      <p>anymail@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center">
+                  <div class="p-3 bg-dark text-warning rounded-3">
+                    <i class="fa-solid fa-location-dot fs-4"></i>
+                  </div>
+                  <div>
+                    <h5>Address</h5>
+                    <p>Random 12, Adresss of City, Country.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- contact info div -->
+            </div>
+          </div>
+
+          <!-- contact form -->
+          <div class="col-lg-6">
+            <div class="card p-3 border-0 shadow-sm rounded-3">
+              <h2 class="px-3">Contact Information</h2>
+
+              <form class="row p-3">
+                <div class="col-lg-6 mb-3">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="form-control shadow-none"
+                    id="name"
+                  />
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control shadow-none"
+                    id="email"
+                  />
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    class="form-control shadow-none"
+                    id="subject"
+                  />
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <textarea
+                    placeholder="Message"
+                    id="message"
+                    class="form-control shadow-none"
+                    rows="5"
+                  ></textarea>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-dark w-50">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- contact form end -->
+        </div>
+
+        <div class="div">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55543.2974899651!2d71.58723464805902!3d29.532209229117594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b9ee4e335c893%3A0x3cfb6dc1093330a9!2sLodhr%C4%81n%2C%20Pakistan!5e0!3m2!1sen!2s!4v1742458519636!5m2!1sen!2s"
+            width="100%"
+            height="450"
+            class="mt-4"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </main>
 
     <!-- main section end -->
@@ -259,11 +382,9 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- fontawsome -->
     <script src="./assets/js/fontawsome.min.js"></script>
+    <!-- aos -->
+    <script src="./assets/js/aos.js"></script>
     <!-- custom js -->
     <script src="./assets/js/main.js"></script>
-    <script>
-      // aos js
-      AOS.init();
-    </script>
   </body>
 </html>
